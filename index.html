@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html style="overflow-y:scroll;scroll-behavior:smooth;">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assests/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon-16x16.png">
+    <link rel="manifest" href="./assets/img/site.webmanifest">
+
+    <link
+      rel="stylesheet"
+      href="./assets/vendor/@fortawesome/fontawesome-free/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./main.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Loops academy</title>
+  </head>
+  <body class="text-gray-800 antialiased">
+    <div class="all-stuff-wrapper">
+
+    
+    <nav
+      class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg"
+    >
+      <div
+        class="container px-4 mx-auto flex flex-wrap items-center justify-between"
+      >
+        <div
+          class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start"
+        >
+          <a
+            class="text-lg text-orange-500 font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase text-white"
+            href="index.html"
+            >Loops Academy</a
+          ><button
+            class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+            type="button"
+            onclick="toggleNavbar('example-collapse-navbar')"
+          >
+            <i class="text-white fas fa-bars"></i>
+          </button>
+        </div>
+        <div
+          class="lg:flex flex-grow items-center bg-gray-900 lg:bg-transparent lg:shadow-none hidden"
+          id="example-collapse-navbar" style="transition:all 1.2s ease-in-out;"
+        >
+
+          <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
+            <li class="flex items-center">
+              <a
+                class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                href="#course"
+                >
+                <span class=" lg:text-gray-300 text-orange-600 text-sm leading-lg ">Courses</span>
+            </a>
+            </li>
+            <li class="flex items-center">
+              <a
+                class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                href="#contact"
+                >
+                <span class=" lg:text-gray-300 text-orange-600 text-sm leading-lg ">Contact</span>
+              </a>
+
+
+
+            </li>
+            <li class="flex items-center">
+
+                <span class="lg:text-white lg:hover:text-gray-300 lg:text-gray-300 text-orange-600 text-sm leading-lg  px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold">(99)417-17-41</span>
+
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div
+        class="relative pt-16 pb-32 flex content-center items-center justify-center"
+        style="min-height: 95vh;"
+      >
+        <div
+          class="absolute top-0 w-full h-full bg-center bg-cover"
+          style='background-image: url("./assets/img/hero2.jpg");'
+        >
+          <span
+            id="blackOverlay"
+            class="w-full h-full absolute opacity-75 bg-black"
+          ></span>
+        </div>
+        <div class="container relative mx-auto" data-aos='fade-in'>
+          <div class="items-center flex flex-wrap">
+            <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
+              <div class="">
+                <h1 class="text-white font-semibold text-5xl">
+                  Create your <span class="text-orange-500">future</span>.
+                </h1>
+                <p class="mt-4 text-lg text-gray-300">
+                  We’ll help you take control of your studies and achieve your academic goals.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
+          style="height: 70px; transform: translateZ(0px);"
+        >
+          <svg
+            class="absolute bottom-0 overflow-hidden"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="none"
+            version="1.1"
+            viewBox="0 0 2560 100"
+            x="0"
+            y="0"
+          >
+            <polygon
+              class="text-gray-900 fill-current"
+              points="2560 0 2560 100 0 100"
+            ></polygon>
+          </svg>
+        </div>
+      </div>
+      <section class="hero-boxes pb-20  bg-gray-900 -mt-24">
+        <div class="container mx-auto px-4">
+          <div class="flex flex-wrap">
+            <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center" data-aos='zoom-in-up'>
+              <div
+                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
+              >
+                <div class="px-4 py-5 flex-auto">
+                  <div
+                    class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-orange-500"
+                  >
+                    <i class="fas fa-award"></i>
+                  </div>
+                  <h6 class="text-xl font-semibold">Results</h6>
+                  <p class="mt-6 mb-4 text-gray-600">
+                    Student performance, is our performance. We closely monitor
+                    student progress and provided additional support as needed.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="w-full md:w-4/12 px-4 text-center" data-aos='zoom-in-up'>
+              <div
+                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
+              >
+                <div class="px-4 py-5 flex-auto">
+                  <div
+                    class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-orange-500"
+                  >
+                    <i class="fas fa-book"></i>
+                  </div>
+                  <h6 class="text-xl font-semibold">Structured Resources</h6>
+                  <p class="mt-4 mb-4 text-gray-600">
+                    Carefully designed resources are structured to help
+                      you translate knowledge into academic success.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="pt-6 w-full md:w-4/12 px-4 text-center" data-aos='zoom-in-up'>
+              <div
+                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
+              >
+                <div class="px-4 py-5 flex-auto">
+                  <div
+                    class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-orange-500"
+                  >
+                    <i class="fas fa-hand-holding-usd"></i>
+                  </div>
+                  <h6 class="text-xl font-semibold">Affordable Prices</h6>
+                  <p class="mt-6 mb-4 text-gray-600">
+                    Affordable prices,flexible payments and discounts!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-wrap items-center mt-32">
+            <div class="w-full md:w-5/12 px-4 mr-auto ml-auto" data-aos='fade-down'>
+              <div
+                class="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-gray-100"
+              >
+                <i class="fas fa-user-friends text-xl text-orange-600"></i>
+              </div>
+              <h3 class="text-3xl text-orange-500 mb-2 font-semibold leading-normal">
+                Supportive tutors
+              </h3>
+              <p
+                class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-300"
+              >
+                Turn weaknesses into strengths with engaging tutors who get where you’re coming from,
+                but can help you get wherever you want to be.
+              </p>
+              <p
+                class="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-300"
+              >
+                  Receive carefully designed learning materials.
+                 Developed by experienced Peak educators who meticulously understand the WA curriculum.
+              </p>
+              <a
+                href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/presentation"
+                class="font-bold text-gray-800 mt-8"
+                >Check Our Courses!</a
+              >
+            </div>
+            <div class="w-full md:w-4/12 px-4 mr-auto ml-auto" data-aos='fade-up'>
+              <div
+                class="relative  flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-orange-600"
+              >
+                <img
+                  alt="..."
+                  src="./assets/img/support.jpg"
+                  class="w-full align-middle rounded-t-lg"
+                />
+                <blockquote class="relative p-8 mb-4">
+                  <svg
+                    preserveAspectRatio="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 583 95"
+                    class="absolute left-0 w-full block"
+                    style="height: 95px; top: -94px;"
+                  >
+                    <polygon
+                      points="-30,95 583,95 583,60"
+                      class="text-orange-600 fill-current"
+                    ></polygon>
+                  </svg>
+                  <h4 class="text-xl font-bold text-gray-900">
+                    Passionate teachers
+                  </h4>
+                  <p class="text-md font-light mt-2 text-white">
+                Be inspired by approachable teachers who get it, and get you. Engage in well structured
+                 learning courses that have been designed with you, for you.
+                  </p>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="relative py-20 bg-gray-300">
+        <div
+          class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+          style="height: 80px; transform: translateZ(0px);"
+        >
+          <svg
+            class="absolute bottom-0 overflow-hidden"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="none"
+            version="1.1"
+            viewBox="0 0 2560 100"
+            x="0"
+            y="0"
+          >
+            <polygon
+              class="text-gray-300 fill-current"
+              points="2560 0 2560 100 0 100"
+            ></polygon>
+          </svg>
+        </div>
+        <div class="container mx-auto px-4 ">
+          <div class="items-center flex flex-wrap">
+            <div class="w-full md:w-4/12 ml-auto mr-auto px-4" data-aos='fade-right'>
+              <img
+                alt="..."
+                class="max-w-full "
+                src="./assets/img/book.svg"
+              />
+            </div>
+            <div class="w-full md:w-5/12 ml-auto mr-auto px-4" data-aos='fade-left'>
+              <div class="md:pr-12">
+                <div
+                  class="text-white p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-orange-500"
+                >
+                  <i class="fas fa-book text-xl"></i>
+                </div>
+                <h3 class="text-3xl font-semibold">Discover a new way to learn.</h3>
+                <p class="mt-4 text-lg leading-relaxed text-gray-600">
+                Build a strong study foundation. Save study time with a simpler, smarter way of learning.
+                 Be inspired by passionate teachers and tutors who get it, and get you.
+                </p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="course" class="pt-20 pb-48 bg-gray-300">
+        <div class="container mx-auto px-4">
+          <div class="flex flex-wrap justify-center text-center mb-24">
+            <div class="w-full lg:w-6/12 px-4" data-aos='fade-up'>
+              <h2 class="text-4xl font-semibold">Here are our <span class="text-orange-600">course</span> offerings</h2>
+              <p class="text-lg leading-relaxed m-4 text-gray-600">
+                  Take the complexity out of your learning.
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-wrap swiper-container">
+            <div class="swiper-wrapper">
+
+
+            <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 lg:px-4 swiper-slide">
+              <div class="lg:px-6">
+                <img
+                  alt="..."
+                  src="./assets/img/math.png"
+                  class="shadow-lg  max-w-full mx-auto"
+                  style="width:450px;height:360px;object-fit:cover;"
+                />
+                <div class="pt-6 text-center">
+                  <h5 class="text-xl font-bold text-orange-600">Math</h5>
+                  <p class="mt-1 text-sm text-gray-600 uppercase font-semibold">
+                    Build a strong foundtion in math
+                  </p>
+
+                </div>
+              </div>
+            </div>
+            <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 lg:px-4 swiper-slide">
+              <div class="lg:px-6">
+                <img
+                  alt="..."
+                  src="./assets/img/english-min.jpg"
+                  class="shadow-lg  max-w-full mx-auto"
+                  style="width: 450px;height:360px;object-fit:cover;"
+                />
+                <div class="pt-6 text-center">
+                  <h5 class="text-xl font-bold text-orange-600">General English/IELTS</h5>
+                  <p class="mt-1 text-sm text-gray-600 uppercase font-semibold">
+                    English is more expensive than money in today's world.
+                  </p>
+
+                </div>
+              </div>
+            </div>
+            <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 lg:px-4 swiper-slide">
+              <div class="lg:px-6">
+                <img
+                  alt="..."
+                  src="./assets/img/accounting-min.jpg"
+                  class="shadow-lg  max-w-full mx-auto"
+                  style="width: 450px;height:350px;object-fit:cover;"
+                />
+                <div class="pt-6 text-center">
+                  <h5 class="text-xl font-bold text-orange-600">Accounting</h5>
+                  <p class="mt-1 text-sm text-gray-600 uppercase font-semibold">
+                    Learn accounting and be a smart accountant.
+                  </p>
+
+                </div>
+              </div>
+            </div>
+            <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 lg:px-4 swiper-slide">
+              <div class="lg:px-6">
+                <img
+                  alt="..."
+                  src="./assets/img/coding.jpg"
+                  class="shadow-lg  max-w-full mx-auto"
+                  style="width: 450px;height:350px;object-fit:cover;"
+                />
+                <div class="pt-6 text-center">
+                  <h5 class="text-xl font-bold text-orange-600">Programming</h5>
+                  <p class="mt-1 text-sm text-gray-600 uppercase font-semibold">
+                    Learn  one of  today's highly-paid and most demanded skills
+                  </p>
+
+                </div>
+              </div>
+            </div>
+            <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 lg:px-4 swiper-slide">
+              <div class="lg:px-6">
+                <img
+                  alt="..."
+                  src="./assets/img/russian.jpg"
+                  class="shadow-lg  max-w-full mx-auto"
+                  style="width: 450px;height:350px;object-fit:cover;"
+                />
+                <div class="pt-6 text-center">
+                  <h5 class="text-xl font-bold text-orange-600">Russian</h5>
+                  <p class="mt-1 text-sm text-gray-600 uppercase font-semibold">
+                    Speak russian fluently and discover new opportunities for yourself.
+                  </p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+                  <!-- Add Arrows -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </section>
+      <section class="pb-20 relative block bg-gray-900">
+        <div
+          class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+          style="height: 80px; transform: translateZ(0px);"
+        >
+          <svg
+            class="absolute bottom-0 overflow-hidden"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="none"
+            version="1.1"
+            viewBox="0 0 2560 100"
+            x="0"
+            y="0"
+          >
+            <polygon
+              class="text-gray-900 fill-current"
+              points="2560 0 2560 100 0 100"
+            ></polygon>
+          </svg>
+        </div>
+        <div class="container mx-auto px-4 lg:pt-24 lg:pb-64">
+          <div class="flex flex-wrap text-center justify-center">
+            <div class="w-full lg:w-6/12 px-4" data-aos='fade-up'>
+              <h2 class="text-4xl font-semibold text-white">Why <span class="text-orange-600">Us</span></h2>
+              <p class="text-lg leading-relaxed mt-4 mb-4 text-gray-500">
+                Care makes students feel safe, valued and respected; When they feel this way, they listen.
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-wrap mt-12 justify-center">
+            <div class="w-full lg:w-3/12 px-4 text-center">
+              <div
+                class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-gray-100 inline-flex items-center justify-center"
+                data-aos='zoom-in'
+
+              >
+                <i class="fas fa-tasks text-xl text-orange-600"></i>
+              </div>
+              <h6 class="text-xl mt-5 font-semibold text-white">
+                Weekly Quiz
+              </h6>
+              <p class="mt-2 mb-4 text-gray-500">
+                Short weekly quiz to assess student
+                understanding and progress each week.
+              </p>
+            </div>
+            <div class="w-full lg:w-3/12 px-4 text-center">
+              <div
+                class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-gray-100 inline-flex items-center justify-center"
+                data-aos='zoom-in'
+              >
+                <i class="fas fa-chalkboard-teacher text-xl text-orange-600"></i>
+              </div>
+              <h5 class="text-xl mt-5 font-semibold text-white">
+                Passionate Teachers
+              </h5>
+              <p class="mt-2 mb-4 text-gray-500">
+                Passionate teachers who are great communicators. Subject-matter experts
+                who really care for you and can explain tricky concepts clearly.
+              </p>
+            </div>
+            <div class="w-full lg:w-3/12 px-4 text-center">
+              <div
+                class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-gray-100 inline-flex items-center justify-center"
+                data-aos='zoom-in'
+              >
+                <i class="fas fa-calendar-check text-xl text-orange-600" ></i>
+              </div>
+              <h5 class="text-xl mt-5 font-semibold text-white">Regular feedback</h5>
+              <p class="mt-2 mb-4 text-gray-500">
+                Feedback is provided to students
+                and parents on a regular basis to ensure you reach peak performance.
+
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="relative block py-24 lg:pt-0 bg-gray-900">
+        <div class="container mx-auto px-4 py-20">
+          <div class="flex flex-wrap justify-center lg:-mt-64 -mt-48">
+            <div class="w-full lg:w-6/12 px-4">
+              <div
+                class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-300"
+                data-aos='fade-up-left'
+              >
+              <form class="" method="POST" data-netlify='true'>
+
+
+                <div class="flex-auto p-5 lg:p-10">
+                  <h4 class="text-2xl font-semibold">Want to contact with us?</h4>
+                  <p class="leading-relaxed mt-1 mb-4 text-gray-600">
+                    Complete this form and we will get back to you in 24 hours.
+                  </p>
+                  <div class="relative w-full mb-3 mt-8">
+                    <label
+                      class="block uppercase text-gray-700 text-xs font-bold mb-2"
+                      for="full-name"
+                      >Full Name</label
+                    ><input
+                      name="name"
+                      type="text"
+                      class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
+                      placeholder="Full Name"
+                      style="transition: all 0.15s ease 0s;"
+                    />
+                  </div>
+                  <div class="relative w-full mb-3">
+                    <label
+                      class="block uppercase text-gray-700 text-xs font-bold mb-2"
+                      for="tel"
+                      >Phone Number</label
+                    ><input
+                    name="telphone-number"
+                      type="tel"
+                      class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
+                      placeholder="Tel"
+                      style="transition: all 0.15s ease 0s;"
+                    />
+                  </div>
+                  <div class="" data-netlify-recaptcha='true'>
+
+                  </div>
+                  <div class="relative w-full mb-3">
+                    <label
+                      class="block uppercase text-gray-700 text-xs font-bold mb-2"
+                      for="message"
+                      >Message</label
+                    ><textarea
+                      name="message"
+
+                      rows="4"
+                      cols="80"
+                      class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
+                      placeholder="Type a message..."
+                    ></textarea>
+                  </div>
+                  <div class="text-center mt-6">
+                    <button
+                      type="submit"
+                      class="bg-gray-900 hover:bg-orange-600 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
+                      type="button"
+                      style="transition: all 0.15s ease 0s;"
+                    >
+                      Send Message
+                    </button>
+                  </div>
+                </div>
+              </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="relative bg-gray-300 pt-8 pb-6">
+      <div
+        class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+        style="height: 80px; transform: translateZ(0px);"
+      >
+        <svg
+          class="absolute bottom-0 overflow-hidden"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          version="1.1"
+          viewBox="0 0 2560 100"
+          x="0"
+          y="0"
+        >
+          <polygon
+            class="text-gray-300 fill-current"
+            points="2560 0 2560 100 0 100"
+          ></polygon>
+        </svg>
+      </div>
+      <div class="container mx-auto px-4">
+        <div class="w-full flex justify-between flex-wrap">
+          <div class="mr-8 pl-8">
+          <h4 class="text-5xl font-semibold">Let's <span class="text-orange-600">keep</span> in touch!</h4>
+          <h5 class="text-lg mt-0 mb-2 text-gray-700">
+            Find us on any of these platforms, we respond 1-2 business days.
+          </h5>
+          <div class="mt-6">
+          <button
+          class="bg-white text-blue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+          type="button"
+          >
+          <a href="https://t.me/IhatePewDiePie">
+
+            <i class="flex fab fa-telegram text-orange-600"></i></button
+            >
+          </a>
+            <button
+            class="bg-white text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+            type="button"
+          >
+          <i class="flex fab fa-facebook text-orange-600"></i></button
+          >
+
+        </div>
+      </div>
+      <div class="mr-8 pr-8">
+        <h4 class="text-5xl font-semibold"><span class="text-orange-600">Contact</span> Now</h4>
+        <h5 class="text-lg mt-0 mb-2 text-gray-700">(99)417-17-41</h5>
+      </div>
+      </div>
+      <hr class="my-6 border-gray-400" />
+      <div
+        class="flex flex-wrap  items-center md:justify-between justify-center"
+      >
+        <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+          <div class="text-xl text-gray-600 font-semibold py-1">
+            Copyright © 2020 Loops Academy by <span class="text-orange-600 text-2xl">Javohir The Hacker</span>.
+            <!-- <a
+              href="https://www.creative-tim.com"
+              class="text-gray-600 hover:text-gray-900"
+              >Javohir The Hacker</a
+            >. -->
+          </div>
+        </div>
+      </div>
+    </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </div>
+  </body>
+  <script>
+    function toggleNavbar(collapseID) {
+      document.getElementById(collapseID).classList.toggle("hidden");
+      document.getElementById(collapseID).classList.toggle("block");
+    }
+
+// AOS
+
+AOS.init({
+  delay:200,
+  duration:1200,
+  once:false,
+  offset: 123,
+})
+
+
+
+    let mySwiper = new Swiper('.swiper-container', {
+  // cssMode:true,
+  // Optional parameters
+  slidesPerGroup:1,
+  slidesPerView:1,
+  spaceBetween:10,
+  direction: 'horizontal',
+  loop: true,
+  centeredSlides:true,
+
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  breakpoints: {
+        // 640: {
+        //   slidesPerView: 2,
+        //   spaceBetween: 15,
+        // },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 60,
+        },
+      },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+})
+
+
+
+  </script>
+</html>
