@@ -1,3 +1,3 @@
 # LoopsAcademy
-Educational website made width
+Educational website made with
 Tailwind Css Starter Kit.
